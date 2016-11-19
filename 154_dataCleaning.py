@@ -43,5 +43,9 @@ dictionary = df.token.apply(Counter)
 
 
 # convert the dictionary into a data frame
-
+#merge the words
+names = Counter()
+for i in df.index:
+    names += dictionary[i]
+    
 # analyze data frame to find power feature
